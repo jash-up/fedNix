@@ -90,4 +90,12 @@
     };
   };
 
+  # syncthng
+  services.syncthing = {
+    enable = true;
+    #user = "ash";
+    #group = "users";
+    #dataDir = "/home/ash/.config/syncthing";
+  };
+
 }
