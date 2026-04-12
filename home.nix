@@ -67,8 +67,10 @@
       core.sshCommand = "ssh -i ~/.ssh/id_ed25519";
     };
 
-    delta.enable = true;
+    #delta.enable = true;
   };
+
+  programs.delta.enable = true;
 
   programs.ssh = {
     enable = true;
