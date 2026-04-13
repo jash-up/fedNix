@@ -21,9 +21,7 @@
     #git
     neovim
     proton-vpn 
-    #javaPackages.compiler.openjdk11
-    #javaPackages.compiler.openjdk21
-    alacritty
+
     keepassxc
     obsidian
     discord
@@ -54,6 +52,7 @@
     scrcpy
     nmap
     zathura
+
   ];
 
   services.ssh-agent.enable = true;
