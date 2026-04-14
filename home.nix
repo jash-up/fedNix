@@ -19,7 +19,7 @@
   home.packages = with pkgs; [
     fastfetch
     #git
-    neovim
+    #neovim
     proton-vpn 
 
     keepassxc
