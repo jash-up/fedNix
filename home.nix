@@ -52,7 +52,7 @@
     scrcpy
     nmap
     zathura
-
+    uxplay
   ];
 
   services.ssh-agent.enable = true;
@@ -88,6 +88,8 @@
       };
     };
   };
+
+  targets.genericLinux.enable = true;
 
   # syncthng
   services.syncthing = {

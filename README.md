@@ -31,3 +31,13 @@ sudo firewall-cmd --reload
 
 # Start and enable the Samba services
 sudo systemctl enable --now smb nmb
+
+# for uxplay
+sudo dnf install avahi
+sudo systemctl enable --now avahi-daemon
+
+sudo firewall-cmd --permanent --add-service=mdns
+sudo firewall-cmd --permanent --add-port=7000/tcp --add-port=7001/tcp --add-port=7100/tcp
+sudo firewall-cmd --permanent --add-port=6000/udp --add-port=6001/udp --add-port=7011/udp
+sudo firewall-cmd --reload
+
